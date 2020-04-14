@@ -19,13 +19,12 @@ public class Player : MonoBehaviour
     void CalculateMovements()
     {
         float horizontalMovement = Input.GetAxis("Horizontal");
-
-        if (Mathf.Abs(horizontalMovement) > Mathf.Epsilon)
-        {
-            horizontalMovement = horizontalMovement * Time.deltaTime * moveSpeed;
-            horizontalMovement += transform.position.x;
-            transform.position = new Vector2(horizontalMovement, transform.position.y);
-        }
-
+        //float verticalMovement = Input.GetAxis("Vertical");
+        horizontalMovement = horizontalMovement * Time.deltaTime * moveSpeed;
+        horizontalMovement += transform.position.x;
+        //verticalMovement = verticalMovement * Time.deltaTime * moveSpeed;
+        //verticalMovement += transform.position.y;
+        //transform.position = new Vector2(horizontalMovement, verticalMovement);
+        transform.position = new Vector2(horizontalMovement, transform.position.y);
     }
 }
