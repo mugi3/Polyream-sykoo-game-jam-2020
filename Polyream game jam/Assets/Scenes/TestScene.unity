@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 432403677}
   - component: {fileID: 432403676}
   m_Layer: 0
-  m_Name: Point Light 2D
   m_Name: GroundCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
